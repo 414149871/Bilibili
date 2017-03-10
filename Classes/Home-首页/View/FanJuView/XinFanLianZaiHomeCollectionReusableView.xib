@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="XinFanLianZaiHomeCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tW3-Tt-BN3"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGC-xy-atM" userLabel="连载动画" customClass="RLPartitionButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9ez-I8-a3X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="连载动画" image="home_region_icon_33">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pe-tW-zeM" userLabel="完结动画" customClass="RLPartitionButton">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="完结动画" image="home_region_icon_32">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-h3-cnd" customClass="RLPartitionButton">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="国产动画" image="home_region_icon_153">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3N-3x-18a" customClass="RLPartitionButton">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="官方延伸" image="home_region_icon_152">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4f-PU-IHr" userLabel="追番">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="b4Y-64-MXg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="zhuifan">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojY-fL-wOe" userLabel="放送表">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="fangsongbiao">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT0-Yy-bEj" userLabel="索引">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="suoyin">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYT-3h-Zgp" userLabel="headerBtn" customClass="TuiJianHeaderButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MvX-IL-8ji"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="t4f-PU-IHr" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="06M-fl-gyx"/>
+                <constraint firstItem="ojY-fL-wOe" firstAttribute="leading" secondItem="t4f-PU-IHr" secondAttribute="trailing" constant="10" id="1ut-bc-mrH"/>
+                <constraint firstItem="CT0-Yy-bEj" firstAttribute="top" secondItem="t4f-PU-IHr" secondAttribute="top" id="2lK-G9-VE7"/>
+                <constraint firstAttribute="trailing" secondItem="AYT-3h-Zgp" secondAttribute="trailing" id="7ub-Wu-Mp1"/>
+                <constraint firstItem="i3N-3x-18a" firstAttribute="leading" secondItem="nz8-h3-cnd" secondAttribute="trailing" id="GQg-mV-w0W"/>
+                <constraint firstItem="tW3-Tt-BN3" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Hf8-re-FF8"/>
+                <constraint firstItem="AYT-3h-Zgp" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="IZW-mT-04x"/>
+                <constraint firstItem="nz8-h3-cnd" firstAttribute="height" secondItem="uGC-xy-atM" secondAttribute="height" id="PXV-Sy-pyP"/>
+                <constraint firstItem="uGC-xy-atM" firstAttribute="top" secondItem="tW3-Tt-BN3" secondAttribute="bottom" constant="10" id="RRW-el-Me0"/>
+                <constraint firstItem="6pe-tW-zeM" firstAttribute="top" secondItem="uGC-xy-atM" secondAttribute="top" id="RUb-zZ-LWF"/>
+                <constraint firstAttribute="trailing" secondItem="tW3-Tt-BN3" secondAttribute="trailing" id="SmP-ip-8Eo"/>
+                <constraint firstAttribute="trailing" secondItem="CT0-Yy-bEj" secondAttribute="trailing" constant="10" id="TAF-I7-J3V"/>
+                <constraint firstItem="CT0-Yy-bEj" firstAttribute="width" secondItem="t4f-PU-IHr" secondAttribute="width" id="Tzr-92-aLf"/>
+                <constraint firstItem="nz8-h3-cnd" firstAttribute="leading" secondItem="6pe-tW-zeM" secondAttribute="trailing" id="Who-3h-Cfe"/>
+                <constraint firstItem="ojY-fL-wOe" firstAttribute="height" secondItem="t4f-PU-IHr" secondAttribute="height" id="X89-pU-i3z"/>
+                <constraint firstItem="6pe-tW-zeM" firstAttribute="leading" secondItem="uGC-xy-atM" secondAttribute="trailing" id="XGl-Eb-rWA"/>
+                <constraint firstItem="6pe-tW-zeM" firstAttribute="width" secondItem="uGC-xy-atM" secondAttribute="width" id="a28-Y8-aa5"/>
+                <constraint firstItem="ojY-fL-wOe" firstAttribute="top" secondItem="t4f-PU-IHr" secondAttribute="top" id="bKc-zb-XlH"/>
+                <constraint firstItem="i3N-3x-18a" firstAttribute="width" secondItem="uGC-xy-atM" secondAttribute="width" id="dfJ-fN-PGh"/>
+                <constraint firstItem="nz8-h3-cnd" firstAttribute="top" secondItem="uGC-xy-atM" secondAttribute="top" id="dwT-mb-MYO"/>
+                <constraint firstItem="uGC-xy-atM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="eW0-7V-n3G"/>
+                <constraint firstItem="CT0-Yy-bEj" firstAttribute="height" secondItem="t4f-PU-IHr" secondAttribute="height" id="fu7-LN-s6s"/>
+                <constraint firstItem="6pe-tW-zeM" firstAttribute="height" secondItem="uGC-xy-atM" secondAttribute="height" id="hEc-wM-Ncj"/>
+                <constraint firstAttribute="trailing" secondItem="i3N-3x-18a" secondAttribute="trailing" id="mYf-tO-ggw"/>
+                <constraint firstItem="nz8-h3-cnd" firstAttribute="width" secondItem="uGC-xy-atM" secondAttribute="width" id="oDw-7a-Wlz"/>
+                <constraint firstItem="i3N-3x-18a" firstAttribute="height" secondItem="uGC-xy-atM" secondAttribute="height" id="qAs-dE-Z7G"/>
+                <constraint firstItem="CT0-Yy-bEj" firstAttribute="leading" secondItem="ojY-fL-wOe" secondAttribute="trailing" constant="10" id="qJj-Jj-sqA"/>
+                <constraint firstItem="t4f-PU-IHr" firstAttribute="top" secondItem="6pe-tW-zeM" secondAttribute="bottom" constant="5" id="tDQ-0f-9hH"/>
+                <constraint firstItem="ojY-fL-wOe" firstAttribute="width" secondItem="t4f-PU-IHr" secondAttribute="width" id="u2V-Ej-fH0"/>
+                <constraint firstItem="i3N-3x-18a" firstAttribute="top" secondItem="uGC-xy-atM" secondAttribute="top" id="ull-tc-xvj"/>
+                <constraint firstAttribute="bottom" secondItem="AYT-3h-Zgp" secondAttribute="bottom" id="xDE-lx-30B"/>
+                <constraint firstItem="tW3-Tt-BN3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="yBP-Jr-gTQ"/>
+                <constraint firstItem="AYT-3h-Zgp" firstAttribute="top" secondItem="ojY-fL-wOe" secondAttribute="bottom" id="zeX-GR-n1g"/>
+            </constraints>
+            <connections>
+                <outlet property="scrollBgView" destination="tW3-Tt-BN3" id="Axc-P9-lmR"/>
+                <outlet property="tuiJianHeaderBtn" destination="AYT-3h-Zgp" id="NbL-EC-071"/>
+            </connections>
+            <point key="canvasLocation" x="-293" y="26"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="fangsongbiao" width="94" height="51"/>
+        <image name="home_region_icon_152" width="40" height="40"/>
+        <image name="home_region_icon_153" width="40" height="40"/>
+        <image name="home_region_icon_32" width="40" height="40"/>
+        <image name="home_region_icon_33" width="40" height="40"/>
+        <image name="suoyin" width="96" height="52"/>
+        <image name="zhuifan" width="94" height="51"/>
+    </resources>
+</document>

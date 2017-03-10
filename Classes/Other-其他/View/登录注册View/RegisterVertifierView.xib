@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVertifierView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="xbO-6h-oiW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Te-PA-CzA">
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.34509803919999998" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gNR-XW-0cW"/>
+                    </constraints>
+                    <state key="normal" title="获取验证码"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="vertiflyAction:" destination="-1" eventType="touchUpInside" id="2fF-d4-lCs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击&quot;获取验证码&quot;按钮，即表示同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-ep-V5W">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Cjg-tb-Dyp"/>
+                        <constraint firstAttribute="width" constant="196" id="wSM-Se-t3E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8R-eB-nng">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="注册协议">
+                        <color key="titleColor" red="0.96862745100000003" green="0.34509803919999998" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="p8R-eB-nng" firstAttribute="height" secondItem="Vy3-ep-V5W" secondAttribute="height" id="3RL-JN-JFR"/>
+                <constraint firstAttribute="trailing" secondItem="0Te-PA-CzA" secondAttribute="trailing" constant="30" id="48x-ms-fHh"/>
+                <constraint firstItem="p8R-eB-nng" firstAttribute="leading" secondItem="Vy3-ep-V5W" secondAttribute="trailing" id="Del-TU-LFD"/>
+                <constraint firstItem="Vy3-ep-V5W" firstAttribute="top" secondItem="0Te-PA-CzA" secondAttribute="bottom" constant="10" id="F7z-9g-mww"/>
+                <constraint firstItem="p8R-eB-nng" firstAttribute="top" secondItem="Vy3-ep-V5W" secondAttribute="top" id="SSp-BT-WGn"/>
+                <constraint firstItem="p8R-eB-nng" firstAttribute="trailing" secondItem="0Te-PA-CzA" secondAttribute="trailing" id="V0n-sz-uPp"/>
+                <constraint firstItem="0Te-PA-CzA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZHI-WJ-i54"/>
+                <constraint firstItem="Vy3-ep-V5W" firstAttribute="leading" secondItem="0Te-PA-CzA" secondAttribute="leading" id="gTf-Gj-7O6"/>
+                <constraint firstItem="0Te-PA-CzA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="zYC-le-As4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="62.5"/>
+        </view>
+    </objects>
+</document>

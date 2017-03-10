@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PartitionBtn">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_region_border" translatesAutoresizingMaskIntoConstraints="NO" id="22v-mM-A37" userLabel="背景">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="22v-mM-A37" secondAttribute="height" multiplier="1:1" id="9QB-88-F3M"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkI-54-Hu1" userLabel="文本">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hW8-YB-iLv" userLabel="图标"/>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hW8-YB-iLv" firstAttribute="bottom" secondItem="22v-mM-A37" secondAttribute="bottom" constant="-15" id="2gZ-qB-326"/>
+                <constraint firstItem="zkI-54-Hu1" firstAttribute="top" secondItem="22v-mM-A37" secondAttribute="bottom" id="3vT-as-Sgz"/>
+                <constraint firstAttribute="trailing" secondItem="22v-mM-A37" secondAttribute="trailing" constant="10" id="5Fb-yl-pRm"/>
+                <constraint firstItem="zkI-54-Hu1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vpe-Iq-lxc"/>
+                <constraint firstAttribute="trailing" secondItem="zkI-54-Hu1" secondAttribute="trailing" id="bDj-V6-mi0"/>
+                <constraint firstItem="hW8-YB-iLv" firstAttribute="leading" secondItem="22v-mM-A37" secondAttribute="leading" constant="15" id="lE9-MA-4v1"/>
+                <constraint firstItem="hW8-YB-iLv" firstAttribute="top" secondItem="22v-mM-A37" secondAttribute="top" constant="15" id="m4P-Vt-AYN"/>
+                <constraint firstItem="hW8-YB-iLv" firstAttribute="trailing" secondItem="22v-mM-A37" secondAttribute="trailing" constant="-15" id="m65-aq-3Ql"/>
+                <constraint firstAttribute="bottom" secondItem="zkI-54-Hu1" secondAttribute="bottom" id="rII-IR-jqF"/>
+                <constraint firstItem="22v-mM-A37" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="snQ-u4-vGV"/>
+                <constraint firstItem="22v-mM-A37" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tjF-nQ-6Bn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="picImgView" destination="hW8-YB-iLv" id="mDO-yK-Epq"/>
+                <outlet property="titleStringLabel" destination="zkI-54-Hu1" id="ECX-Q5-As8"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="-48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_region_border" width="72" height="76"/>
+    </resources>
+</document>

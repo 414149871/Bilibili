@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="TuiJianReMenCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Id-3Y-tV9" customClass="TuiJianHeaderButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3cs-Vk-0DY"/>
+                    </constraints>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTt-sD-WSP" userLabel="滚动背景">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8Id-3Y-tV9" firstAttribute="top" secondItem="zTt-sD-WSP" secondAttribute="bottom" id="0FE-NN-yAZ"/>
+                <constraint firstItem="8Id-3Y-tV9" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="1sz-MD-Dz6"/>
+                <constraint firstAttribute="trailing" secondItem="8Id-3Y-tV9" secondAttribute="trailing" id="Hr1-ej-Oao"/>
+                <constraint firstItem="zTt-sD-WSP" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="IGh-rj-kmd"/>
+                <constraint firstAttribute="bottom" secondItem="8Id-3Y-tV9" secondAttribute="bottom" id="JWE-GA-f6M"/>
+                <constraint firstItem="zTt-sD-WSP" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="qor-Ep-38B"/>
+                <constraint firstAttribute="trailing" secondItem="zTt-sD-WSP" secondAttribute="trailing" id="sGJ-ox-FKe"/>
+            </constraints>
+            <connections>
+                <outlet property="scrollBgView" destination="zTt-sD-WSP" id="Vht-Qw-5pu"/>
+                <outlet property="tuiJianHeaderBtn" destination="8Id-3Y-tV9" id="qEm-hP-d8k"/>
+            </connections>
+            <point key="canvasLocation" x="-135" y="-29"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,111 @@
+//
+//  PrefixHeader.pch
+//  UI_08_08_AFNetWorking
+//
+//  Created by 刘嘉豪 on 16/10/13.
+//  Copyright © 2016年 Rick_Liu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/**** 在#ifdef __OBJC__ 和 #endif 之间的内容，只会拷贝到OC源代码文件中,不会拷贝到其他源代码文件中****/
+//(只有OC文件才会执行 #ifdef __OBJC__ 与#endif 之间的内容。防止工程中有C文件编译错误的情况。此处可以生成c的文件,以及Person的OC文件,然后 #import "Person.h" 会报错来举例。)
+#ifdef __OBJC__
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "UIView+UIViewExtension.h"
+
+//判断手机是否大于version版本号
+#define  DeviceVersion(version) [[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES:NO
+
+/*颜色*/
+#define RLColorA(r,g,b,a) [UIColor colorWithRed:(r/255.0) green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define RLColor(r,g,b) RLColorA((r),(g),(b),255)
+#define RLColorRandom RLColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+#define RLGrayColor(v) RLColor((v),(v),(v))
+#define RLCommonBgColor RLColor(247, 88, 135)
+#define RLGrayBgColor RLColor(241, 241, 241)
+/*日志*/
+#ifdef DEBUG
+#define RLLog(...) NSLog(__VA_ARGS__)
+#else
+#define RLLog(...)
+#endif
+
+#define RLLogFunc RLLog(@"%s",__func__)
+
+#define mobAppKey       @"189a7a075f75b"
+#define mobAppSecret    @"4c328e003b67f0109d7fc57979eb47a2"
+
+
+#endif
+/**** 在#ifdef __OBJC__ 和 #endif 之间的内容，只会拷贝到OC源代码文件中,不会拷贝到其他源代码文件中****/
+
+//如果希望某些内容能拷贝到任何源文件(C/OC/C++等),那就不要写在#ifdef __OBJC__ 和 #endif 之间
+
+
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

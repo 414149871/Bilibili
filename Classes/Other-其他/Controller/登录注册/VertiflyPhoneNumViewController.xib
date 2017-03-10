@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VertiflyPhoneNumViewController">
+            <connections>
+                <outlet property="phoneNumLabel" destination="tfT-AH-12k" id="KOc-Jy-3EQ"/>
+                <outlet property="veritiflyResultLabel" destination="o41-X6-zsN" id="KOU-CG-9Ln"/>
+                <outlet property="vertiflyNumTextField" destination="lDT-W0-qFD" id="8vk-Gk-f1b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TE-rG-KJm">
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.34509803921568627" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="WuJ-eq-45Y"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o41-X6-zsN" userLabel="验证结果">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Chb-jZ-reb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfT-AH-12k" userLabel="手机号码">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="W0O-Bk-D7V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDT-W0-qFD" userLabel="验证码输入框">
+                    <color key="tintColor" red="0.96862745100000003" green="0.34509803919999998" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DXX-Jn-EPD"/>
+                        <constraint firstAttribute="width" constant="180" id="Kin-EQ-I2v"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-Nv-SyP">
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.34509803919999998" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ohm-9t-RDz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="下一步"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="fFe-VG-MXT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o41-X6-zsN" secondAttribute="trailing" id="281-ti-On9"/>
+                <constraint firstItem="o41-X6-zsN" firstAttribute="top" secondItem="3TE-rG-KJm" secondAttribute="bottom" constant="20" id="2ew-sp-KyH"/>
+                <constraint firstItem="o41-X6-zsN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EkN-Ue-po4"/>
+                <constraint firstAttribute="trailing" secondItem="JjF-Nv-SyP" secondAttribute="trailing" constant="50" id="HiO-9Q-cWl"/>
+                <constraint firstAttribute="trailing" secondItem="3TE-rG-KJm" secondAttribute="trailing" id="RWq-pO-54p"/>
+                <constraint firstItem="tfT-AH-12k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yr2-Nt-TLv"/>
+                <constraint firstItem="3TE-rG-KJm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ytm-1Q-MXS"/>
+                <constraint firstItem="lDT-W0-qFD" firstAttribute="top" secondItem="tfT-AH-12k" secondAttribute="bottom" constant="20" id="bTC-5x-OZX"/>
+                <constraint firstAttribute="trailing" secondItem="tfT-AH-12k" secondAttribute="trailing" id="euV-88-59L"/>
+                <constraint firstItem="3TE-rG-KJm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g0Y-Ek-bei"/>
+                <constraint firstItem="JjF-Nv-SyP" firstAttribute="top" secondItem="lDT-W0-qFD" secondAttribute="bottom" constant="50" id="rcw-AF-44S"/>
+                <constraint firstItem="JjF-Nv-SyP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="trJ-DV-MwP"/>
+                <constraint firstItem="lDT-W0-qFD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yjA-23-Pkx"/>
+                <constraint firstItem="tfT-AH-12k" firstAttribute="top" secondItem="o41-X6-zsN" secondAttribute="bottom" constant="20" id="yym-WC-I91"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

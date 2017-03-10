@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>titleName</key>
+		<string>兴趣圈</string>
+		<key>imageName</key>
+		<string>discovery_circle_ico</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>话题中心</string>
+		<key>imageName</key>
+		<string>discovery_topicCenter</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>活动中心</string>
+		<key>imageName</key>
+		<string>home_recommend_activity</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>原创排行榜</string>
+		<key>imageName</key>
+		<string>discovery_rankOriginal_ico</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>全区排行榜</string>
+		<key>imageName</key>
+		<string>discovery_rankAll_ico</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>游戏中心</string>
+		<key>imageName</key>
+		<string>discovery_game_ico</string>
+	</dict>
+	<dict>
+		<key>titleName</key>
+		<string>周边商城</string>
+		<key>imageName</key>
+		<string>discovery_shop_ico</string>
+	</dict>
+</array>
+</plist>

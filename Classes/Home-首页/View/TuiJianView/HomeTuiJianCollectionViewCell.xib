@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeTuiJianCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4bk-Il-YEN" userLabel="背景">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Zu7-Fn-d3L"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prepare_bottom_background" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-YW-UpY" userLabel="背景底部">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GaX-pb-PFT"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="misc_playCount_new" translatesAutoresizingMaskIntoConstraints="NO" id="4Sn-35-445" userLabel="播放量图">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="8qJ-fr-Omx"/>
+                            <constraint firstAttribute="width" constant="15" id="JmS-La-un4"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="misc_danmakuCount_new" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-4H-BPk" userLabel="弹幕量图">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="P3g-ME-KVd"/>
+                            <constraint firstAttribute="height" constant="10" id="YU4-fD-B74"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3338万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbn-pK-Z3L" userLabel="播放量">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FEt-cM-Uq2"/>
+                            <constraint firstAttribute="width" constant="45" id="Z9D-CG-edE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3338万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DF-6T-BwG" userLabel="弹幕量">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="Bdz-I0-Cxo"/>
+                            <constraint firstAttribute="height" constant="21" id="tWA-ti-ZSJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3338万" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-8A-LE5" userLabel="标题">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ZaF-Mi-MBj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBo-D6-8wZ" userLabel="更新按钮">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ZEV-G6-VU9"/>
+                            <constraint firstAttribute="height" constant="45" id="b42-l7-zOx"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="home_refresh_new"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bDD-8A-LE5" firstAttribute="top" secondItem="WeF-YW-UpY" secondAttribute="bottom" id="6qO-je-YOR"/>
+                <constraint firstItem="WeF-YW-UpY" firstAttribute="trailing" secondItem="4bk-Il-YEN" secondAttribute="trailing" id="9Sb-ZV-Jte"/>
+                <constraint firstItem="WeF-YW-UpY" firstAttribute="leading" secondItem="4bk-Il-YEN" secondAttribute="leading" id="BBC-k4-Gpw"/>
+                <constraint firstItem="4bk-Il-YEN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CSz-Wg-KxU"/>
+                <constraint firstItem="0DF-6T-BwG" firstAttribute="centerY" secondItem="4Sn-35-445" secondAttribute="centerY" id="DqH-qV-vDg"/>
+                <constraint firstItem="0DF-6T-BwG" firstAttribute="leading" secondItem="z1T-4H-BPk" secondAttribute="trailing" constant="5" id="FbJ-en-Lm2"/>
+                <constraint firstAttribute="trailing" secondItem="YBo-D6-8wZ" secondAttribute="trailing" id="GtM-S6-40h"/>
+                <constraint firstItem="gbn-pK-Z3L" firstAttribute="centerY" secondItem="4Sn-35-445" secondAttribute="centerY" id="Hng-fK-Efl"/>
+                <constraint firstAttribute="trailing" secondItem="4bk-Il-YEN" secondAttribute="trailing" id="IBg-v0-5cN"/>
+                <constraint firstItem="4Sn-35-445" firstAttribute="bottom" secondItem="WeF-YW-UpY" secondAttribute="bottom" constant="-5" id="WqA-R9-IH5"/>
+                <constraint firstItem="YBo-D6-8wZ" firstAttribute="top" secondItem="WeF-YW-UpY" secondAttribute="bottom" constant="-10" id="cab-1m-tzL"/>
+                <constraint firstItem="4bk-Il-YEN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gG8-fg-hV8"/>
+                <constraint firstItem="gbn-pK-Z3L" firstAttribute="leading" secondItem="4Sn-35-445" secondAttribute="trailing" constant="5" id="lUO-ob-ye6"/>
+                <constraint firstItem="bDD-8A-LE5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mCB-Bl-KXm"/>
+                <constraint firstItem="WeF-YW-UpY" firstAttribute="bottom" secondItem="4bk-Il-YEN" secondAttribute="bottom" id="okY-Oj-b9E"/>
+                <constraint firstItem="YBo-D6-8wZ" firstAttribute="leading" secondItem="bDD-8A-LE5" secondAttribute="trailing" id="tXI-em-5a4"/>
+                <constraint firstItem="z1T-4H-BPk" firstAttribute="leading" secondItem="gbn-pK-Z3L" secondAttribute="trailing" constant="5" id="vMV-42-Eh3"/>
+                <constraint firstItem="4Sn-35-445" firstAttribute="leading" secondItem="WeF-YW-UpY" secondAttribute="leading" constant="8" id="wwI-1c-hCu"/>
+                <constraint firstItem="z1T-4H-BPk" firstAttribute="centerY" secondItem="4Sn-35-445" secondAttribute="centerY" id="y7x-4I-8uC"/>
+            </constraints>
+            <size key="customSize" width="150" height="136"/>
+            <connections>
+                <outlet property="cover" destination="4bk-Il-YEN" id="g0o-O0-TFD"/>
+                <outlet property="coverBottomHight" destination="GaX-pb-PFT" id="kdr-RH-u2V"/>
+                <outlet property="coverBottomImageView" destination="WeF-YW-UpY" id="4qP-M2-oC6"/>
+                <outlet property="coverHight" destination="Zu7-Fn-d3L" id="F4n-JE-Qvy"/>
+                <outlet property="danmaku" destination="0DF-6T-BwG" id="iNx-aP-O0Y"/>
+                <outlet property="play" destination="gbn-pK-Z3L" id="iTm-w0-Cqy"/>
+                <outlet property="refreshNewImageWidth" destination="ZEV-G6-VU9" id="oaI-H1-uIB"/>
+                <outlet property="title" destination="bDD-8A-LE5" id="0ed-eE-C0e"/>
+            </connections>
+            <point key="canvasLocation" x="-149" y="-178"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_refresh_new" width="68" height="68"/>
+        <image name="misc_danmakuCount_new" width="14" height="10"/>
+        <image name="misc_playCount_new" width="14" height="10"/>
+        <image name="prepare_bottom_background" width="667" height="92"/>
+    </resources>
+</document>
